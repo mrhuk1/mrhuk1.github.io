@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>鹿鹿的圣诞愿望清单</title>
-    <div style="position:fixed; top:0; left:0;">    
+    <div style="position:fixed; top:0; left:0;">
     <audio autoplay="autoplay" loop="loop" controls="controls" id="audios">
         <source src="1.mp3" type="audio/mp3" autoplay="autoplay"  />
           </audio>
-           </div>                                                     
+           </div>
           <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
         html,
@@ -84,7 +84,7 @@
             <button type="submit" onclick="send()">递出</button>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 span">
-            <span>本页面严格遵守xx保密协议，用户信息于2019年12月24日前严格保密《<a onclick="send()">保密协议与免责声明</a>》</span>
+            <span>本页面严格遵守xx保密协议，用户信息于2019年12月24日前严格保密《<a onclick="secret()">保密协议与免责声明</a>》</span>
         </div>
       </div>
 </body>
@@ -117,6 +117,10 @@
                 }
             });
         }
+    }
+
+    function secret() {
+        confirm('保密协议')
     }
 </script>
 
