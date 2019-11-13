@@ -84,7 +84,7 @@
             <button type="submit" onclick="send()">递出</button>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 span">
-            <span>本页面严格遵守xx保密协议，用户信息于2019年12月24日前严格保密《<a onclick="secret()">保密协议与免责声明</a>》</span>
+            <span>本网站严格遵守Alpaca保密协议，用户信息于2019年12月24日前严格保密《<a onclick="secret()">保密协议与免责声明</a>》</span>
         </div>
       </div>
 </body>
@@ -92,7 +92,7 @@
 <script src="https://cdn.bootcss.com/github-api/3.3.0/GitHub.bundle.min.js"></script>
 <script>
     function send() {
-        if (confirm('确认发送？')) {
+        if (confirm('提交机会仅有一次，确认发送？')) {
             console.log('send');
             var content = document.getElementById('text').value;
 
@@ -111,7 +111,7 @@
                 console.log(result);
                 console.log(request);
                 if (!error) {
-                    alert('发送成功！');
+                    alert('已送出');
                 } else {
                     alert('发送失败！');
                 }
@@ -120,7 +120,7 @@
     }
 
     function secret() {
-        confirm('保密协议')
+        confirm('怎么可能有保密协议，说了是钓鱼网站')
     }
 </script>
 
